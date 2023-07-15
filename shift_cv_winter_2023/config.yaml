@@ -4,9 +4,9 @@ data:
   num_workers: 4
   path: "./data/"
 model:
-  baseline: resnet152
-  weights: DEFAULT
+  baseline: efficientnet_v2_m
+  weights: IMAGENET1K_V1
   device: cuda
-  learning_rate: 0.00001
-  num_epochs: 20
+  learning_rate: 0.001
+  num_epochs: 30
   step_size: 10
